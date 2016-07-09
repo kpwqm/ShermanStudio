@@ -1,0 +1,130 @@
+.main-about .logo{
+	width: 137px;
+	height: 136px;
+	overflow: hidden;
+	background: url("../images/logo.png") no-repeat center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	top: 4px;
+	left: 80px;
+}
+.main-about .centent-box{
+	left: 430px;
+}
+.main-about .centent{
+	width: 542px;
+	margin-left: 50px;
+	font-size: 15px;
+}
+.main-about .centent p{
+	line-height: 17px;
+	word-spacing: 2px;
+	word-wrap: break-word;
+	margin-bottom: 18px;
+	text-align: justify;
+}
+.main-about h1,
+.main-about h3,
+.cate-pub .pub-nav{
+	color: #000;
+}
+.cate-name{
+	font-family: "sandy_bayregular";
+	font-size: 45px;
+}
+.main-about h3{
+	font-size: 22px;
+	font-family: "dinregular";
+}
+.cate-award{
+	margin-top: 69px;
+}
+.cate-award .cate-name{
+	margin-bottom: 37px;
+}
+.cate-pub{
+ margin-top: 96px;
+}
+.cate-pub .cate-name{
+	margin-bottom: 25px;
+}
+.pub-nav{
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+.pub-nav a,
+.pub-nav span{
+	display: block;
+	float: left;
+	font-family: "dinregular";
+}
+.pub-nav a{
+	width: 18px;
+	color: #000;
+}
+.pub-nav .slides-page{
+	width: 54px;
+	float: left;
+}
+.pub-nav .slides-page span{
+	width: 8px;
+	text-align: center;
+}
+.pub-nav .slides-page .page-num{
+	width: 18px;
+}
+.pub-nav .slides-page .page-size{
+	width: 28px;
+}
+.pub-slides{
+	width: 542px;
+	height: 468px;
+	overflow: hidden;
+}
+.pub-slides li{
+	width: 542px;
+	height: 468px;
+	float: left;
+}
+.pub-slides .pub-txt{
+	height: 51px;
+	overflow: hidden;
+}
+.pub-slides .pub-img{
+	width: 540px;
+	height: 359px;
+	vertical-align: middle;
+}
+.cate-contact{
+	margin-top: 128px;
+	margin-bottom: 230px;
+}
+.cate-contact .cate-name{
+	margin-bottom: 32px;
+}
+.cate-contact .contact-header{
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+.cate-contact .input-box input,
+.cate-contact .textarea-box textarea{
+	width: 511px;
+	font-size: 15px;
+	border: none;
+	background-color: #f2f2f2;
+}
+.cate-contact .input-box{
+	height: 38px;
+}
+.cate-contact .input-box input{
+	height: 31px;
+	line-height: 31px;
+	padding: 0 13px;
+}
+.cate-contact .textarea-box textarea{
+	height: 162px;
+	padding: 11px 13px;
+	resize: none;
+}

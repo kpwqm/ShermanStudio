@@ -1,0 +1,67 @@
+.wrap{
+	width: 1260px;
+	margin: auto;
+}
+a:focus {outline: none;}
+a:active {outline: 0;}
+a:hover, a:focus, a:active {text-decoration: none;}
+.f-l{float:left;}
+.f-r{float:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix::after, .clearfix::before{content: " ";display:table; clear:both;}
+.clearfix{_height:1%;}
+.show{display: block!important;}
+.hide{display: none!important;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+
+/* ----- box ----- */
+.fs-13{font-size: 13px!important;}
+.fs-15{font-size: 15px!important;}
+.fs-22{font-size: 22px!important;}
+.fs-24{font-size: 24px!important;}
+.fs-45{font-size: 45px!important;}
+
+.co-808080{color: #808080!important;}
+.co-999{color: #999!important;}
+.co-000{color: #000!important;}
+.bg-f2f2f2{background-color: #f2f2f2!important;}
+/* ----- box ----- */
+i[class^="icon"]{
+	display: block;
+}
+header{
+	height: 25px;
+	line-height: 25px;
+	width: 100%;
+}
+.page-about header{
+	margin-top: 40px;
+	margin-bottom: 98px;
+}
+.page-about footer{
+	height: 230px;
+}
+.site-wrap span{
+	display: block;
+	float: left;
+	font-size: 24px;
+}
+.site-name{
+	font-family: "dinbold";
+	color: #999;
+}
+.site-current{
+	font-family: "dinregular";
+	color: #000;
+	margin-left: 23px;
+}
+.icon-nav{
+	width: 30px;
+	height: 25px;
+	background: url('../images/icon-nav.png') no-repeat center;
+	cursor: pointer;
+}
+footer{
+	height: 20px;
+}
