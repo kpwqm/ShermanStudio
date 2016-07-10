@@ -53,6 +53,7 @@
 	position: absolute;
 	top: 12px;
 	right: 0;
+	z-index: 99;
 }
 .pub-nav a,
 .pub-nav span{
@@ -64,28 +65,38 @@
 	width: 18px;
 	color: #000;
 }
-.pub-nav .slides-page{
+.pub-nav .slides-log{
 	width: 54px;
 	float: left;
 }
-.pub-nav .slides-page span{
+.pub-nav .slides-log span{
 	width: 8px;
 	text-align: center;
 }
-.pub-nav .slides-page .page-num{
+.pub-nav .slides-log .page-num{
 	width: 18px;
 }
-.pub-nav .slides-page .page-size{
+.pub-nav .slides-log .page-size{
 	width: 28px;
 }
 .pub-slides{
 	width: 542px;
-	height: 468px;
+	height: 472px;
 	overflow: hidden;
+}
+.pub-slides ul{
+	height: inherit;
+	overflow: hidden;
+	position: relative;
 }
 .pub-slides li{
 	width: 542px;
-	height: 468px;
+	height: 472px;
+	float: left;
+}
+.pub-slides > div{
+	width: 542px;
+	height: 472px;
 	float: left;
 }
 .pub-slides .pub-txt{

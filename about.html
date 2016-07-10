@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="./statics/css/reset.css">
 	<link rel="stylesheet" href="./statics/css/common.css">
 	<link rel="stylesheet" href="./statics/css/about.css">
+	<script src="//cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+	<!-- <script src="//cdn.bootcss.com/slidesjs/3.0/jquery.slides.min.js"></script> -->
+	<script src="./statics/js/plugin/jquery.slides.min.js"></script>
 </head>
 <body>
 <div class="wrap page-about">
@@ -69,8 +72,8 @@
 				<h1 class="cate-name">Publication</h1>
 				<div class="centent relative">
 					<!-- 轮播内容 -->
-					<div class="pub-slides relative">
-						<ul class="clearfix">
+					<div class="pub-slides">
+						<!-- <ul>
 							<li>
 								<h3 class="pub-title">No Title - 1</h3>
 								<p class="pub-txt">
@@ -78,24 +81,31 @@
 								</p>
 								<img src="./statics/images/img.jpg" alt="1.jpg" class="pub-img">
 							</li>
-							<li>
-								<h3 class="pub-title">No Title - 2</h3>
-								<p class="pub-txt">
-									Being fully engaged in Cai Guo-Qiang's artistic process from start to finish, the studio begins with site visits anexplosion events.
-								</p>
-								<img src="./statics/images/img.jpg" alt="2.jpg" class="pub-img">
-							</li>
-						</ul>
+						</ul> -->
+						<div>
+							<h3 class="pub-title">No Title - 1</h3>
+							<p class="pub-txt">
+								Being fully engaged in Cai Guo-Qiang's artistic process from start to finish, the studio begins with site visits anexplosion events. Additionally, the studio directly handles the sale of Cai's works to public and private collections.
+							</p>
+							<img src="./statics/images/img.jpg" alt="1.jpg" class="pub-img">
+						</div>
+						<div>
+							<h3 class="pub-title">No Title - 2</h3>
+							<p class="pub-txt">
+								Being fully engaged in Cai Guo-Qiang's artistic process from start to finish, the studio begins with site visits anexplosion events. Additionally, the studio directly handles the sale of Cai's works to public and private collections.
+							</p>
+							<img src="./statics/images/img.jpg" alt="1.jpg" class="pub-img">
+						</div>
 					</div>
 					<!-- 轮播控制 -->
 					<div class="pub-nav">
-						<a href="javascript:void(0)" class="prev">&lt;</a>
-						<div class="slides-page">
-							<span class="page-num">1</span>
+						<a href="javascript:void(0)" class="prev slidesjs-previous">&lt;</a>
+						<div class="slides-log">
+							<span class="page-num slidesjs-slide-number">1</span>
 							<span>/</span>
 							<span class="page-size">20</span>
 						</div>
-						<a href="javascript:void(0)" class="next">&gt;</a>
+						<a href="javascript:void(0)" class="next slidesjs-next">&gt;</a>
 					</div>
 				</div>
 			</div>
@@ -129,7 +139,27 @@
 		</div>
 	</div>
 	<!-- 内容部分 - end -->
-
 </div>
+
+
+<script>
+  $(function() {
+		$('.pub-slides').slidesjs({
+      width: 542,
+      height: 468,
+      callback: {
+        loaded: function(number) {
+          $('.slidesjs-slide-number').text(number);
+        },
+        start: function(number) {
+
+        },
+        complete: function(number) {
+          $('.slidesjs-slide-number').text(number);
+        }
+      }
+		});
+  });
+</script>
 </body>
 </html>
